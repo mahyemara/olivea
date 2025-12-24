@@ -1,0 +1,245 @@
+/* PREMIUM Olive Oil — Earthy Luxury */
+
+:root {
+  --green-dark: #1f3d2b;
+  --green: #3f7d4a;
+  --green-light: #8fcf9a;
+  --yellow: #e7c65c;
+  --cream: #f7f4ec;
+  --ink: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f7f4ec, #ffffff);
+}
+
+/* Layout */
+.wrap {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-alt {
+  background: var(--cream);
+}
+
+.section-title {
+  font-family: 'Italiana', cursive;
+  font-size: 42px;
+  letter-spacing: 0.15em;
+  color: var(--green-dark);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(247, 244, 236, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--green-dark);
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green), var(--yellow));
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.brand-name {
+  font-family: 'Italiana', cursive;
+  letter-spacing: 0.2em;
+}
+
+.nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--green-dark);
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: var(--green);
+}
+
+.btn {
+  background: linear-gradient(135deg, var(--green), var(--yellow));
+  color: white;
+  padding: 10px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--green-dark);
+  border: 1px solid var(--green);
+}
+
+/* Hero */
+.hero {
+  padding: 120px 0 80px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+}
+
+.badge {
+  color: var(--green);
+  font-weight: 600;
+}
+
+.welcome {
+  font-family: 'Italiana', cursive;
+  font-size: 72px;
+  background: linear-gradient(135deg, var(--green), var(--yellow));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.welcome-sub {
+  color: #9e8f4d;
+  max-width: 480px;
+}
+
+.hero-cta {
+  margin: 30px 0;
+  display: flex;
+  gap: 15px;
+}
+
+.mini-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.mini-card {
+  background: white;
+  padding: 15px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Cards */
+.card {
+  max-width: 720px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+
+/* Products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.product-card h3 {
+  font-family: 'Italiana', cursive;
+}
+
+.price {
+  color: var(--green);
+  font-weight: bold;
+}
+
+/* Popular */
+.popular-block {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.popular-card {
+  background: linear-gradient(135deg, var(--green), var(--yellow));
+  color: white;
+  padding: 30px;
+  border-radius: 24px;
+}
+
+/* Footer */
+.footer {
+  background: var(--green-dark);
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    font-size: 52px;
+  }
+
+  .nav {
+    display: none;
+  }
+}
